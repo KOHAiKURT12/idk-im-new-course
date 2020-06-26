@@ -1,0 +1,16 @@
+title: Idk Im New
+description: lol
+template:
+  repo: idk-im-new-template
+  name: idk-im-new
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
